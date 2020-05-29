@@ -1,0 +1,17 @@
+<h3 id="Description">Description<a class="anchor-link" href="#Description">&#182;</a></h3><p>Main LO:</p>
+<ul>
+<li>Write a function that requires use of a list</li>
+</ul>
+<p>Lesson LOs:</p>
+<ul>
+<li>Use loop and enumerate to operate on sequential data</li>
+<li>Write a python function</li>
+<li>Document code effectively</li>
+</ul>
+<p>Additional learning objectives:</p>
+<ul>
+<li>Operate on lists using sorted()</li>
+<li>Use python string manipulation functions.</li>
+</ul>
+<p>Write a function called <code>find_first_names()</code> that takes in <code>students_input</code>, a list of a class roster like the one above and returns a list of the first names of students in <code>students_input</code>. If a first name appears twice in the roster, it should appear twice in what the function returns.</p>
+<p>The list of first names returned by <code>find_first_names()</code> should be sorted.</p>

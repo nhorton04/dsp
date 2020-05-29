@@ -1,0 +1,10 @@
+### TESTCASE
+print(
+    find_first_names([
+        'Brittany Johnson', 'Sarah Klein', 'Drew Thompson', 'Jimmy Parker',
+        'Jill Kelly', 'Heidi Howard', 'Jonathan Watkins', 'Terri Allen',
+        'Angela Reyes', 'Suzanne Roberts', 'daniel burgess MD',
+        'Cristina Daniels', 'Sandra Vargas', 'Rachel Weeks', 'Nathaniel Mills',
+        'Brittany Barnes', 'Brian Jennings', 'Alexandra Walker',
+        'Robert Berry', 'John Mann', 'Erica Russell'
+    ]))

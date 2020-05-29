@@ -1,0 +1,3 @@
+### TESTCASE
+# returns false if input is not described in docstring
+print(bool('students_input' in find_first_names.__doc__))

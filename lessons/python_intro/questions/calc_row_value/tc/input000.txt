@@ -1,0 +1,2 @@
+### Testcase sample
+print(calc_row_value('6057'))

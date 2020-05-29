@@ -1,0 +1,5 @@
+### Testcase sample
+try:
+    calc_row_value(['12345'])
+except ValueError:
+    print(True)

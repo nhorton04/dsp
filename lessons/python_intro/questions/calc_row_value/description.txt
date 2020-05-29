@@ -1,0 +1,27 @@
+<h3 id="Description">Description<a class="anchor-link" href="#Description">&#182;</a></h3><p>Main LO:</p>
+<ul>
+<li>Use loop and enumerate to operate on sequential data</li>
+</ul>
+<p>Lesson LOs:</p>
+<ul>
+<li>Write a python function</li>
+<li>Document code effectively</li>
+<li>How to handle errors using try-except or raise</li>
+</ul>
+<p>There's a special magic formula that assigns a numeric value to a row of digits like <code>6057</code>. It works as follows:</p>
+<ul>
+<li>add the value of every odd digit multiplied by its position in the row</li>
+<li>subtract the value of every even digit multiplied by 5</li>
+</ul>
+<p>Using <code>6057</code> we would get a value of <code>6*1 - 0*5 + 5*3 - 7*5 = -14</code> because six is the first digit (odd), zero is the second digit (even), five is the third digit (odd) and seven is the fourth digit (even).</p>
+<p>Write a function called <code>calc_row_value()</code> that calculates the value of a row of numbers. It should take one argument, <code>input_string</code> that is a string.</p>
+<p>In addition, the function you write should meet the following:</p>
+<ul>
+<li>It should make use of the <code>enumerate()</code> function.</li>
+<li>It should raise a ValueError when the input is not a string.</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">calc_row_value</span><span class="p">(</span><span class="s1">&#39;6057&#39;</span><span class="p">)</span>
+<span class="o">-</span><span class="mi">14</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">calc_row_value</span><span class="p">(</span><span class="s1">&#39;12345&#39;</span><span class="p">)</span>
+<span class="mi">5</span>
+</pre></div>

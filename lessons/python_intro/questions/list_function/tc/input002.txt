@@ -1,0 +1,6 @@
+### TESTCASE
+print(
+    find_first_names([
+        'Nicholas Jones', 'Ashley Rowland', 'Stephanie Jackson',
+        'Donald Hicks', 'Evan Johnson', 'ashley Parker'
+    ]))

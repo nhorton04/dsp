@@ -1,0 +1,9 @@
+<pre><code class='language-python'>### SOLUTION
+def find_first_names(students_input):
+    """args:
+           students_input (list): a class roster
+       returns:
+           first_names (list): a list of the first names in the class roster. 
+    """
+
+    return sorted([n.split()[0].capitalize() for n in students_input])</code></pre>

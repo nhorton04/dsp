@@ -1,0 +1,2 @@
+### Testcase
+print(calc_row_value('7154226105 '))
