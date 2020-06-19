@@ -17,4 +17,4 @@ Now plot the CDF. Is the distribution uniform?
     
 ![CDF](https://i.imgur.com/JgDqcnW.png)
     
-    ## Yes, the distribution is uniform.
+## Yes, the distribution is uniform.
