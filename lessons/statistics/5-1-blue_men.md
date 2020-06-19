@@ -15,8 +15,6 @@ In order to join Blue Man Group, you have to be male between 5’10” and 6’1
     print( 'upper = {}'.format(upper)) 
     print('upper - lower = {}'.format(upper - lower))
 
-lower = 0.48963902786483265
-
-upper = 0.8323858654963063
-
-upper - lower = 0.3427468376314737
+lower = 0.48963902786483265  
+upper = 0.8323858654963063  
+upper - lower = 0.3427468376314737  
