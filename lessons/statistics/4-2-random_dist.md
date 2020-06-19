@@ -9,12 +9,12 @@ Now plot the CDF. Is the distribution uniform?
     thinkplot.Pmf(pmf, linewidth=0.1)
     thinkplot.Config(xlabel='Random variate', ylabel='PMF')
     
-    ![PMF](https://i.imgur.com/LK93eTH.png)
+![PMF](https://i.imgur.com/LK93eTH.png)
     
     cdf = thinkstats2.Cdf(t)
     thinkplot.Cdf(cdf)
     thinkplot.Config(xlabel='Random variate', ylabel='CDF')
     
-    ![CDF](https://i.imgur.com/JgDqcnW.png)
+![CDF](https://i.imgur.com/JgDqcnW.png)
     
     ## Yes, the distribution is uniform.
