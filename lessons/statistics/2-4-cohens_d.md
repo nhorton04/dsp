@@ -27,3 +27,5 @@ Compared with difference in pregnancy length between first babies and others:
     CohenEffectSize(firsts.prglngth, others.prglngth)
     
 0.028879044654449883
+
+The Cohen Effect Size for the difference between the weight of first babies and others is -3x the Cohen Effect Size for the difference between pregnancy lengths for first babies and others.
