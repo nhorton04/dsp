@@ -21,3 +21,9 @@ Difference in lbs: -0.12476118453549034 lbs
     difference = CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb) 
     print("difference: {}".format(difference))
 difference: -0.088672927072602
+
+Compared with difference in pregnancy length between first babies and others:
+
+    CohenEffectSize(firsts.prglngth, others.prglngth)
+    
+0.028879044654449883
