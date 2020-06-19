@@ -42,11 +42,11 @@ It also takes `log_upper`, which is an assumed upper bound on the highest range,
         # collect the arrays into a single sample
         log_sample = np.concatenate(arrays)
         return log_sample
-
+        
 In the above code InterpolateSample, I had to change the code on line 39. It previously read:
 `vals = np.linspace(row.log_lower, row.log_upper, row.freq)`
 it now reads:
-`vals = np.linspace(int(row.log_lower), int(row.log_upper), int(row.freq))`
+`vals = np.linspace(int(row.log_lower), int(row.log_upper), int(row.freq))` 
 
 I was getting an error about it not accepting a float, so I changed the values that were throwing the error.
 
@@ -57,7 +57,7 @@ I was getting an error about it not accepting a float, so I changed the values t
     thinkplot.Cdf(log_cdf)
     thinkplot.Config(xlabel='Household income (log $)',
                ylabel='CDF')
-
+               
 ![CDF_log_sample](https://imgur.com/sANqWja "CDF Log Sample")
 
     sample = np.power(10, log_sample)
@@ -71,7 +71,7 @@ I was getting an error about it not accepting a float, so I changed the values t
 
     Mean(sample), Median(sample), Skewness(sample), PearsonMedianSkewness(sample)
 (34330.52510748183, 10000.0, 6.775200881176056, 0.9595638278153094)
-
+   
     print('Percentage of households reporting a taxable income below the mean: ~ {}%'.format(int(100 * cdf.Prob(Mean(sample)))))
 Percentage of households reporting a taxable income below the mean: ~ 79%
 
@@ -80,15 +80,17 @@ Percentage of households reporting a taxable income below the mean: ~ 79%
 Changing the variable log_upper from 6.0 to 7.0 increased the skewness from 6.7752 to 12.9785 and Pearson Median Skewness from 0.9595 to 0.3935.
 
     log_sample = InterpolateSample(income_df, log_upper=7.0)
-
+    
 ![CDF_log_sample](https://imgur.com/M3OHI27 "CDF Log Sample")
 
     cdf = thinkstats2.Cdf(sample)
     thinkplot.Cdf(cdf)
     thinkplot.Config(xlabel='Household income ($)',
                ylabel='CDF')
-
+               
 ![CDF](https://imgur.com/yEeFXsc "CDF")
-
+    
     Mean(sample), Median(sample), Skewness(sample), PearsonMedianSkewness(sample)
 (76164.28739916759, 10000.0, 12.978502161571178, 0.39350664138128166)
+
+
