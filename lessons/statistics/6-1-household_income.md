@@ -77,12 +77,18 @@ Percentage of households reporting a taxable income below the mean: ~ 79%
 
 ### All of this is based on an assumption that the highest income is one million dollars, but that's certainly not correct.  What happens to the skew if the upper bound is 10 million?
 
-We change the variable log_upper to 8.0 from 6.0 (changing it to 10 million doesn't seem to have any effect at all, unless I'm doing it wrong. Even changing it to 99 million has no effect at all. But changing it to 100 million has an effect somehow).
+Changing the variable log_upper from 6.0 to 7.0 increased the skewness from 6.7752 to 12.9785 and Pearson Median Skewness from 0.9595 to 0.3935.
 
-    log_sample = InterpolateSample(income_df, log_upper=8.0)
+    log_sample = InterpolateSample(income_df, log_upper=7.0)
 
 ![CDF_log_sample](https://imgur.com/M3OHI27 "CDF Log Sample")
 
-    Mean(sample), Median(sample), Skewness(sample), PearsonMedianSkewness(sample)
+    cdf = thinkstats2.Cdf(sample)
+    thinkplot.Cdf(cdf)
+    thinkplot.Config(xlabel='Household income ($)',
+               ylabel='CDF')
 
 ![CDF](https://imgur.com/yEeFXsc "CDF")
+
+    Mean(sample), Median(sample), Skewness(sample), PearsonMedianSkewness(sample)
+(76164.28739916759, 10000.0, 12.978502161571178, 0.39350664138128166)
