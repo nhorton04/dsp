@@ -58,14 +58,15 @@ I was getting an error about it not accepting a float, so I changed the values t
     thinkplot.Config(xlabel='Household income (log $)',
                ylabel='CDF')
                
-![CDF_log_sample](https://imgur.com/sANqWja)
+
+![CDF](https://i.imgur.com/QhuKbD0.png)
 
     sample = np.power(10, log_sample)
     cdf = thinkstats2.Cdf(sample)
     thinkplot.Cdf(cdf)
     thinkplot.Config(xlabel='Household income ($)',
                ylabel='CDF')
-![CDF](https://imgur.com/lBbKaI7)
+![CDF2](https://i.imgur.com/RAFCunf.png)
 
 ### Compute the median, mean, skewness and Pearson’s skewness of the resulting sample. What fraction of households report a taxable income below the mean? How do the results depend on the assumed upper bound?
 
@@ -81,14 +82,14 @@ Changing the variable log_upper from 6.0 to 7.0 increased the skewness from 6.77
 
     log_sample = InterpolateSample(income_df, log_upper=7.0)
     
-![CDF_log_sample](https://imgur.com/M3OHI27)
+![CDF3](https://i.imgur.com/gpf5CgI.png)
 
     cdf = thinkstats2.Cdf(sample)
     thinkplot.Cdf(cdf)
     thinkplot.Config(xlabel='Household income ($)',
                ylabel='CDF')
                
-![CDF](https://imgur.com/yEeFXsc)
+![CDF4](https://i.imgur.com/FBvrQv0.png)
     
     Mean(sample), Median(sample), Skewness(sample), PearsonMedianSkewness(sample)
 (76164.28739916759, 10000.0, 12.978502161571178, 0.39350664138128166)
