@@ -31,5 +31,5 @@ Compared with difference in pregnancy length between first babies and others:
     
 0.028879044654449883
 
-The Cohen Effect Size for the difference between the weight of first babies and others is -3.07x the Cohen Effect Size for the difference between pregnancy lengths for first babies and others (-0.088672927072602 / 0.028879044654449883 = -3.070493783)
+The Cohen Effect Size for the difference between the weight of first babies and others is -3.07x the Cohen Effect Size for the difference between pregnancy lengths for first babies and others (-0.088672927072602 / 0.028879044654449883 = -3.070493783).
 
