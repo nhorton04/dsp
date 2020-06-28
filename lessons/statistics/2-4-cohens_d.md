@@ -7,9 +7,11 @@ Compute Cohen’s effect size to quantify the difference between the groups. How
     mean = live.totalwgt_lb.mean()
     var = live.totalwgt_lb.var()
     std = live.totalwgt_lb.std()
+    
     print('mean: {}, var: {}, std: {}'.format(mean, var, std))
     print('firstborn totalwgt_lb mean: {} lbs, other totalwgt_lb mean: {} lbs'.format(firsts.totalwgt_lb.mean(), others.totalwgt_lb.mean()))
     print("Difference in lbs: {} lbs".format(firsts.totalwgt_lb.mean() - others.totalwgt_lb.mean()))
+    
     firsts.totalwgt_lb.mean() - others.totalwgt_lb.mean()
 
 mean: 7.265628457623368, var: 1.9832904288326532, std: 1.4082934455690168
@@ -28,4 +30,4 @@ Compared with difference in pregnancy length between first babies and others:
     
 0.028879044654449883
 
-The Cohen Effect Size for the difference between the weight of first babies and others is -3x the Cohen Effect Size for the difference between pregnancy lengths for first babies and others.
+The Cohen Effect Size for the difference between the weight of first babies and others is -3.07x the Cohen Effect Size for the difference between pregnancy lengths for first babies and others.
