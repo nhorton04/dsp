@@ -9,7 +9,7 @@ Plot the actual and biased distributions, and compute their means.
     
     dist_under_18 = thinkstats2.Hist(resp.numkdhh, label='numkdhh')
     thinkplot.Hist(dist_under_18)
-    thinkplot.Config(xlabel='Number of Children less than age 18', ylabel='count')
+    thinkplot.Config(xlabel='Number of Children under age 18', ylabel='count')
     
 ![Hist](https://i.imgur.com/HmcH089.png)
 
@@ -20,7 +20,7 @@ Plot the actual and biased distributions, and compute their means.
         pmf_n[x] = freq / n
 
     thinkplot.Hist(pmf_n)
-    thinkplot.Config(xlabel='Number of Children less than age 18', ylabel='PMF')
+    thinkplot.Config(xlabel='Number of Children under age 18', ylabel='PMF')
 
 ![PMF](https://i.imgur.com/eCtzKbY.png)
 
