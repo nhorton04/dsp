@@ -15,7 +15,7 @@ Compute Cohen’s effect size to quantify the difference between the groups. How
     firsts.totalwgt_lb.mean() - others.totalwgt_lb.mean()
 
 mean: 7.265628457623368, var: 1.9832904288326532, std: 1.4082934455690168
-firstborn totalwgt_lb mean: 7.201094430437772 lbs, other totalwgt_lb mean: 7.325855614973262 lbs
+firstborn totalwgt_lb mean: 7.201094430437772 lbs, other totalwgt_lb mean: 7.325855614973262 lbs  
 Difference in lbs: -0.12476118453549034 lbs
 
 ### First babies are slightly (0.125lbs) lighter
